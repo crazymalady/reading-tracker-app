@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #05c3cb; /*333*/
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+}
+
+h1{
+ color: #f3d4d4;
+}
+
+/* Add this to your existing styles.css */
+.book-info h3 {
+    color: #05c3cb; /* Customize the color of the book title */
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea, select {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid #f3d4d4; /* Customize the color of the active field outline */
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #05c3cb; /*333*/
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f3d4d4; /*555*/
+}
+
+#book-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#book-list li {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+#book-list .favorite {
+    border-left: 5px solid gold;
+}
+
+.cover-img {
+    max-width: 100px;
+    max-height: 150px;
+    margin-right: 1rem;
+    float: left;
+}
+
+.book-info {
+    margin-left: 120px;
+}
+
+.progress {
+    color: green;
+}
+
+button.edit, button.delete {
+    margin-right: 5px;
+}
+
+/* Add this to your existing styles.css */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-logo {
+    max-width: 150px;
+    margin-bottom: 1rem;
+    border-radius: 50%; /* Make the logo circular */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: #f3d4d4;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/HeyokaLivingPH Logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Reading Tracker</h1>
+        <h3><i>by HeyokalivingPH</i></h3>
+        <p id="quote"></p>
+    </header>
+    <main>
+        <section id="book-form">
+            <h2>Add New Book</h2>
+            <form id="form">
+                <input type="hidden" id="bookId">
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <select id="type" required>
+                    <option value="" disabled selected>Select Book Type</option>
+                    <option value="Paper Book">Paper Book</option>
+                    <option value="E-Book">E-Book</option>
+                    <option value="Audio Book">Audio Book</option>
+                </select>
+                <input type="number" id="totalPages" placeholder="Total Number of Pages" required>
+                <input type="number" id="currentPage" placeholder="Current Page" min="0">
+                <input type="file" id="coverImage" accept="image/*">
+                <textarea id="summary" placeholder="Summary"></textarea>
+                <input type="text" id="purpose" placeholder="Purpose of Reading:">
+                <input type="text" id="learnings" placeholder="Expected Learnings After Reading:">
+                <button type="submit">Save Book</button>
+                <label>
+                    <input type="checkbox" id="favorite"> Save as Favorite
+                </label>
+            </form>
+        </section>
+        <section id="book-list">
+            <h2>Book List</h2>
+            <ul id="list"></ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="assets/images/HeyokaLivingPH Logo.png" alt="Logo" class="footer-logo">
+            <p>Follow us on social media:</p>
+            <a href="https://www.facebook.com/heyokaliving" target="_blank">Facebook Page</a>
+            <a href="https://www.facebook.com/heyokalivingph.digital.library/" target="_blank">Digital Library</a>
+	    <a href="https://www.tiktok.com/@heyokalivingph" target="_blank">TikTok</a>
+            <a href="https://www.raket.ph/heyokalivingph.store" target="_blank">Online Shop</a>
+
+	    <h4>Developer: <a href="https://www.facebook.com/aiaph.jenniferlacaste" target="_blank">Jennifer Lacaste</a></h4>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
